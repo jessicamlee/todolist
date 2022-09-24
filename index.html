@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>To Do List Practice</title>
+        <title>My To Do List</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="styles/reset.css">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/scss/main.css">
     </head>
     <body>
-        <div class="theme-wrapper">
-            <div class="container">
-                <div id="myDiv" class="header">
-                    <div>
-                        <h2 class="line-height">My To Do List</h2>
-                        <p class="line-height subtitle">Let your worries disappear here</p>
+        <div class="theme-wrapper margin-center">
+            <div class="container margin-center">
+                <div class="modal-container margin-center">
+                    <div id="alertModal" class="modal">
+                        <div class="modal-txt">
+                            <span id="close-modal">&times;</span>
+                            <p class="alert-heading">You must write something&excl;</p>
+                            <p class="alert-mssg">Just trying to help you stay productive here &period; &period; &period;</p>
+                        </div>
                     </div>
+                </div>
+                <div class="header">
+                    <h2 class="line-height">My To Do List</h2>
+                    <p class="line-height subtitle">Let your worries disappear here</p>
                 </div>
                 <div class="toggle">
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="label">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
-                            <div class="ball"></div>
+                        <div class="ball"></div>
                     </label>
                 </div>
                 <div class="input-field">
-                    <input type="text" id="myAnswer" placeholder="What do I need to do today?">
+                    <input type="text" id="myAnswer" class="input" placeholder="What do I need to do today?">
                     <span onclick="newItem()" class="addBtn">Add</span>
                 </div>
                 <ul id="myUl">
