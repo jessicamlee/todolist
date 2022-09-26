@@ -1,14 +1,15 @@
 @use "color" as *;
 @use "size" as *;
 @use "fontweight" as *;
+@use "fontstyle" as *;
 @use "mixin" as *;
 
 /* -----------------------------
 ----------- Global -------------
 ------------------------------ */
 body {
-    background-color: #292c35;
-    color: #fff;
+    background-color: $blueblack;
+    color: $white;
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -22,14 +23,14 @@ body {
 }
 
 .container {
-    padding: 100px 50px;
-    max-width: 768px;
-    min-width: 476px;
+    padding: $sm*6.25 $sm*3.125;
+    max-width: $sm*48;
+    min-width: $sm*29.75;
     position: relative;
 }
 
 .indent {
-    margin-left: 2em;
+    margin-left: $lg;
 }
 
 .margin-center {
@@ -40,26 +41,24 @@ body {
 --------- Typography -----------
 ------------------------------ */
 h1 {
-    font-size: 4em;
+    font-size: $lg*2;
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.1em;
+    font-size: $xl;
+    margin-bottom: $sm*0.1;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: $sm*1.25;
 }
 
 .line-height {
-    line-height: 1.5em;
+    line-height: $md;
 }
 
 .subtitle {
-    font-size: 1.1em;
-    font-weight: 300;
-    font-style: italic;
+    @include font($white, $sm, $medium, $italic);
     margin-bottom: 2.5em;
 }
 
@@ -79,51 +78,48 @@ p {
 .toggle {
     position: absolute;
     bottom: 0;
-    right: 7.5em;
+    right: $sm*7.5;
 
     .checkbox {
         opacity: 0;
         position: absolute;
     
         &:checked + .label .ball {
-            transform: translateX(1.8em);
+            transform: translateX($sm*1.8);
         }
     }
 
     .label {
-        width: 3.5em;
-        height: 1.75em;
-        background-color: #111;
+        @include size($sm*3.5,$sm*1.75);
+        background-color: $black;
+        border-radius: $md*2;
         display: flex;
-        border-radius: 3em;
         align-items: center;
         justify-content: space-between;
-        padding: 0.31em;
-        position: relative;
+        padding: $sm*0.31;
         position: absolute;
         transform: scale(1.5);
-        margin-top: 1.5em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: $md;
+        box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
 
         .fas {
-            font-size: 1em;
+            font-size: $sm;
         }
         
         .fa-moon {
-            color: rgb(154, 167, 255);
+            color: $moonblue;
         }
         
         .fa-sun {
-            color: rgb(255, 207, 74);
+            color: $sunyellow;
         }
 
         .ball {
-            width: 1.3em;
-            height: 1.3em;
-            background-color: white;
+            @include size($sm*1.3,$sm*1.3);
+            background-color: $white;
             position: absolute;
-            top: 0.25em;
-            left: 0.18em;
+            top: $sm*0.25;
+            left: $sm*0.18;
             border-radius: 50%;
             transition: transform 0.25s linear;
         }
@@ -134,27 +130,27 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.75em 1em 0.75em 1em;
+    padding: $sm*0.75 $sm $sm*0.75 $sm;
 
     &:hover {
-        background-color: #f44336;
-        color: white;
-        border-radius: 1.5em;
+        background-color: $red;
+        color: $white;
+        border-radius: $md;
     }
 }
 
 .input-field {
     display: flex;
-    margin-bottom: 1.2em;
+    margin-bottom: $sm*1.2;
 
     input {
         margin: 0;
         width: 80%;
-        padding: 0.75em;
+        padding: $sm*0.75;
         float: left;
-        border-radius: 1.5em;
-        margin-right: 1em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: $md;
+        margin-right: $sm;
+        box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
     }
 }
 
@@ -165,63 +161,63 @@ ul {
     li {
         cursor: pointer;
         position: relative;
-        padding: 0.75em 0.5em 0.75em 2.5em;
-        background: rgb(35, 50, 148);
-        color: white;
-        font-size: 1.12em;
+        padding: $sm*0.75 $xs $sm*0.75 $xl;
+        background: $navy;
+        @include font($white, $sm*1.12, $normal, $base);
         transition: 0.3s;
-        margin-bottom: 0.5em;
-        border-radius: 1.5em;
-        padding: 0.7em 2.5em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: $xs;
+        border-radius: $md;
+        padding: $sm*0.7 $xl;
+        box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
 
         &:nth-child(0) {
-            margin-top: 1.2em;
+            margin-top: $sm*1.2;
         }
 
         &:nth-child(odd) {
-            background: rgb(124, 141, 251);
+            background: $periwinkle;
         }
 
         &.checked {
-            background: #6e727a;
-            color: #ffffff;
+            background: $grey;
+            color: $white;
             text-decoration: line-through;
 
             &::before {
                 content: '';
                 position: absolute;
-                border: #fff solid;
-                border-width: 0 0.125em 0.125em 0;
-                top: 10px;
-                left: 16px;
+                border: $white solid;
+                border-width: 0 $sm*0.125 $sm*0.125 0;
+                top: $sm*0.625;
+                left: $sm;
                 transform: rotate(45deg);
-                height: 1em;
-                width: 0.5em;
+                height: $sm;
+                width: $xs;
             }
         }
     }
 }
 
 .addBtn {
-    padding: 1em;
+    padding: $sm;
     width: 20%;
-    background:rgb(255, 207, 74);
-    color: #292c35;
+    background: $sunyellow;
+    color: $blueblack;
+    @include font($blueblack,$sm,$medium,$base);
     float: left;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 1.5em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: $md;
+    box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
     text-align: center;
 
     &:hover {
-        background-color: rgb(38, 59, 192);
-        color: #fff;
+        background-color: $navy;
+        color: $white;
     }
 }
 
@@ -239,15 +235,15 @@ ul {
         left: 0;
         top: 0;
         overflow: none;
-        background-color: rgba(7, 7, 7, 0.95);
+        background-color: $modalblack;
 
         .modal-txt {
             margin: 15% auto;
-            padding: 1em;
+            padding: $sm;
             width: 80%;
             display: flex;
             flex-direction: column;
-            padding: 2em;
+            padding: $lg;
             text-align: center;
             animation: modalPop 1s ease-in-out;
             -webkit-animation: modalPop 1s ease-in-out;
@@ -255,27 +251,26 @@ ul {
             #close-modal {
                 color: rgb(255, 255, 255);
                 position: absolute;
-                top: 5em;
-                right: 4.5em;
-                font-size: 28px;
+                top: $xl*2;
+                right: $sm*4.5;
+                font-size: $sm*1.75;
                 font-weight: bold;
             
                 &:hover,
                 &:focus {
-                    color: rgb(235, 0, 0);
+                    color: $red;
                     text-decoration: none;
                     cursor: pointer;
                 }
             }
         
             .alert-heading {
-                font-size: 2.2em;
-                margin: 1em auto 0.6em;
+                font-size: $sm*2.2;
+                margin: $sm auto $sm*0.6;
             }
         
             .alert-mssg {
-                font-size: 1em;
-                font-style: italic;
+                @include font($white, $sm, $normal, $italic);
             }
         }
     }
@@ -285,12 +280,16 @@ ul {
 ------ Dark Mode Toggle --------
 ------------------------------ */
 body.light {
-    background-color: #fff;
-    color: #292c35;
-}
+    background-color: $white;
+    color: $blueblack;
 
-ul li.light {
-    color: #fff;
+    .subtitle {
+        color: $blueblack;
+    }
+
+    ul li.light, .alert-heading {
+        color: $white;
+    }
 }
 
 /* -----------------------------

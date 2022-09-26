@@ -1,5 +1,5 @@
 /* -----------------------------
------- Dark Mode Toggle --------
+------ To Do List Field --------
 ------------------------------ */
 // "Close" button + append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
