@@ -1,5 +1,5 @@
 /* -----------------------------
------- Dark Mode Toggle --------
+------ To Do List Field --------
 ------------------------------ */
 // "Close" button + append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -84,3 +84,9 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', ()=>{
     document.body.classList.toggle('light');
 })
+/* -----------------------------
+------ AOS Library -------------
+------------------------------ */
+AOS.init({
+  duration: 1200
+});
