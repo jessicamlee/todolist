@@ -2,11 +2,12 @@
 ----------- Global -------------
 ------------------------------ */
 body {
-  background-color: #292c35;
-  color: #fff;
+  background-color: rgb(41, 44, 53);
+  color: rgb(255, 255, 255);
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  overflow: none;
 }
 
 /* -----------------------------
@@ -17,9 +18,9 @@ body {
 }
 
 .container {
-  padding: 100px 50px;
-  max-width: 768px;
-  min-width: 476px;
+  padding: 6.25em 3.125em;
+  max-width: 48em;
+  min-width: 29.75em;
   position: relative;
 }
 
@@ -52,8 +53,9 @@ p {
 }
 
 .subtitle {
-  font-size: 1.1em;
-  font-weight: 300;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 400;
   font-style: italic;
   margin-bottom: 2.5em;
 }
@@ -85,17 +87,16 @@ p {
 .toggle .label {
   width: 3.5em;
   height: 1.75em;
-  background-color: #111;
-  display: flex;
+  background-color: rgb(17, 17, 17);
   border-radius: 3em;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.31em;
-  position: relative;
   position: absolute;
   transform: scale(1.5);
   margin-top: 1.5em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 .toggle .label .fas {
   font-size: 1em;
@@ -109,7 +110,7 @@ p {
 .toggle .label .ball {
   width: 1.3em;
   height: 1.3em;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0.25em;
   left: 0.18em;
@@ -124,8 +125,8 @@ p {
   padding: 0.75em 1em 0.75em 1em;
 }
 .close:hover {
-  background-color: #f44336;
-  color: white;
+  background-color: rgb(235, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 1.5em;
 }
 
@@ -140,7 +141,7 @@ p {
   float: left;
   border-radius: 1.5em;
   margin-right: 1em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
 }
 
 ul {
@@ -152,13 +153,15 @@ ul li {
   position: relative;
   padding: 0.75em 0.5em 0.75em 2.5em;
   background: rgb(35, 50, 148);
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.12em;
+  font-weight: 400;
+  font-style: normal;
   transition: 0.3s;
   margin-bottom: 0.5em;
   border-radius: 1.5em;
   padding: 0.7em 2.5em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -171,17 +174,17 @@ ul li:nth-child(odd) {
   background: rgb(124, 141, 251);
 }
 ul li.checked {
-  background: #6e727a;
-  color: #ffffff;
+  background: rgb(110, 114, 122);
+  color: rgb(255, 255, 255);
   text-decoration: line-through;
 }
 ul li.checked::before {
   content: "";
   position: absolute;
-  border: #fff solid;
+  border: rgb(255, 255, 255) solid;
   border-width: 0 0.125em 0.125em 0;
-  top: 10px;
-  left: 16px;
+  top: 0.625em;
+  left: 1em;
   transform: rotate(45deg);
   height: 1em;
   width: 0.5em;
@@ -191,17 +194,21 @@ ul li.checked::before {
   padding: 1em;
   width: 20%;
   background: rgb(255, 207, 74);
-  color: #292c35;
+  color: rgb(41, 44, 53);
+  color: rgb(41, 44, 53);
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
   float: left;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 1.5em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 .addBtn:hover {
-  background-color: rgb(38, 59, 192);
-  color: #fff;
+  background-color: rgb(35, 50, 148);
+  color: rgb(255, 255, 255);
 }
 
 /* -----------------------------
@@ -226,15 +233,15 @@ ul li.checked::before {
   flex-direction: column;
   padding: 2em;
   text-align: center;
-  animation: modalPop 1s ease-in-out;
-  -webkit-animation: modalPop 1s ease-in-out;
+  animation: modalPop 0.5s ease-in-out;
+  -webkit-animation: modalPop 0.5s ease-in-out;
 }
 .modal-container .modal .modal-txt #close-modal {
   color: rgb(255, 255, 255);
   position: absolute;
   top: 5em;
   right: 4.5em;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
 }
 .modal-container .modal .modal-txt #close-modal:hover, .modal-container .modal .modal-txt #close-modal:focus {
@@ -247,7 +254,9 @@ ul li.checked::before {
   margin: 1em auto 0.6em;
 }
 .modal-container .modal .modal-txt .alert-mssg {
+  color: rgb(255, 255, 255);
   font-size: 1em;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -255,12 +264,14 @@ ul li.checked::before {
 ------ Dark Mode Toggle --------
 ------------------------------ */
 body.light {
-  background-color: #fff;
-  color: #292c35;
+  background-color: rgb(255, 255, 255);
+  color: rgb(41, 44, 53);
 }
-
-ul li.light {
-  color: #fff;
+body.light .subtitle {
+  color: rgb(41, 44, 53);
+}
+body.light ul li.light, body.light .alert-heading {
+  color: rgb(255, 255, 255);
 }
 
 /* -----------------------------
