@@ -84,3 +84,9 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', ()=>{
     document.body.classList.toggle('light');
 })
+/* -----------------------------
+------ AOS Library -------------
+------------------------------ */
+AOS.init({
+  duration: 1200
+});

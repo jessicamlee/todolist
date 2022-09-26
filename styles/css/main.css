@@ -7,6 +7,7 @@ body {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  overflow: none;
 }
 
 /* -----------------------------
@@ -54,7 +55,7 @@ p {
 .subtitle {
   color: rgb(255, 255, 255);
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
   margin-bottom: 2.5em;
 }
@@ -232,8 +233,8 @@ ul li.checked::before {
   flex-direction: column;
   padding: 2em;
   text-align: center;
-  animation: modalPop 1s ease-in-out;
-  -webkit-animation: modalPop 1s ease-in-out;
+  animation: modalPop 0.5s ease-in-out;
+  -webkit-animation: modalPop 0.5s ease-in-out;
 }
 .modal-container .modal .modal-txt #close-modal {
   color: rgb(255, 255, 255);
