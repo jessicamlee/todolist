@@ -1,0 +1,14 @@
+@use '../utilities' as *;
+
+@media (min-width:1024px) {
+    .close:hover {
+        background-color: $red;
+        color: $white;
+        border-radius: $md;
+    }
+    
+    .addBtn:hover {
+        background-color: $navy;
+        color: $white;
+    }
+}
