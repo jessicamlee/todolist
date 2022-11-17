@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="build/css/main.css">
     </head>
     <body>
-        <div class="theme-wrapper margin-center">
+        <div class="theme-wrapper">
             <div class="container margin-center">
                 <div class="modal-container margin-center">
                     <div id="alertModal" class="modal">
@@ -26,7 +26,7 @@
                     <h2 data-aos="fade-down" class="line-height">My To Do List</h2>
                     <p data-aos="fade-up-right" data-aos-delay="400" class="line-height subtitle">Let your worries disappear here</p>
                 </div>
-                <div data-aos="fade-down" data-aos-delay="1500" class="toggle">
+                <div data-aos="fade-up" data-aos-delay="2000" class="toggle">
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="label">
                         <i class="fas fa-sun"></i>
@@ -39,9 +39,23 @@
                     <span onclick="newItem()" class="addBtn">Add</span>
                 </div>
                 <ul id="myUl"></ul>
-                <p data-aos="flip-up" data-aos-delay="2200" class="line-height subtitle">Note&colon; <b>Click</b> the task when it&apos;s completed&comma; and Select the <b>&ldquo;x&rdquo;</b> to delete them&period;</p>
+                <p data-aos="flip-up" data-aos-delay="2000" class="line-height subtitle">Note&colon; <b>Click</b> the task when it&apos;s completed&comma; and Select the <b>&ldquo;x&rdquo;</b> to delete them&period;</p>
+                <div class="time-container is-flex" data-aos="fade-up-right" data-aos-delay="1500">
+                    <div class="clock-container is-flex">
+                        <div class="time-content flex-center">
+                            <span class="minutes">25</span>
+                            <span>&colon;</span>
+                            <span class="seconds">00</span>
+                        </div>
+                        <div class="controls-container is-flex">
+                            <i class="fas fa-pause flex-center"></i>
+                            <i class="fas fa-play flex-center"></i>
+                            <i class="fas fa-stop flex-center"></i>
+                        </div>
+                    </div>
+                </div>
                 <footer>
-                    <p>Built with matcha 🍵</p>
+                    <p >Built with matcha 🍵</p>
                     <p>&copy; 2022 Jessica Lee&period; All Rights Reserved&period;</p>
                 </footer>
             </div>
