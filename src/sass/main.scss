@@ -1,0 +1,10 @@
+@use '../sass/global/reset';
+@use 'utilities' as *;
+
+@use '../sass/global/index';
+@use '../sass/partials/header';
+@use '../sass/todolist/todolist';
+@use '../sass/partials/footer';
+
+@use '../sass/keyframes/keyframes';
+@use '../sass/queries/queries';
