@@ -11,7 +11,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "C:/Users/jessi/Desktop/todolist/node_modules/.bin/gulp build_css"
+    "build": "C:/Users/jessi/Desktop/todolist/node_modules/.bin/gulp build_css",
+    "watch": "C:/Users/jessi/Desktop/todolist/node_modules/.bin/gulp watch"
   },
   "repository": {
     "type": "git",

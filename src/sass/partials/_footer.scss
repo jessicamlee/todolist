@@ -1,0 +1,15 @@
+@use '../utilities' as *;
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: $sm $sm*2 $sm*1.5;
+
+    p {
+        @include font($white, $sm*0.9, $normal, $normal);
+        text-align: center;
+        margin-top: $xs;
+    }
+}
