@@ -1,0 +1,7 @@
+@use '../utilities' as *;
+
+@media (min-width:768px) {
+    .controls-container {
+        padding-right: $sm*3;
+    }
+}
