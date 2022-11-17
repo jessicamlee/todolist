@@ -1,0 +1,64 @@
+@use '../utilities' as *;
+
+.input-field {
+    display: flex;
+    margin-bottom: $sm*1.2;
+
+    input {
+        margin: 0;
+        width: 80%;
+        padding: $sm*0.75;
+        float: left;
+        border-radius: $md;
+        margin-right: $sm;
+        box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    position: relative;
+    padding: $sm*0.75 $xs $sm*0.75 $xl;
+    background: $navy;
+    @include font($white, $sm*1.12, $normal, $base);
+    transition: 0.3s;
+    margin-bottom: $xs;
+    border-radius: $md;
+    padding: $sm*0.7 $xl;
+    box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &:nth-child(0) {
+        margin-top: $sm*1.2;
+    }
+
+    &:nth-child(odd) {
+        background: $periwinkle;
+    }
+
+    &.checked {
+        background: $grey;
+        color: $white;
+        text-decoration: line-through;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border: $white solid;
+            border-width: 0 $sm*0.125 $sm*0.125 0;
+            top: $sm*0.625;
+            left: $sm;
+            transform: rotate(45deg);
+            height: $sm;
+            width: $xs;
+        }
+    }
+}

@@ -1,5 +1,26 @@
 {
   "dependencies": {
-    "aos": "^2.3.4"
-  }
+    "aos": "^2.3.4",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.56.1"
+  },
+  "name": "todolist",
+  "description": "Beat procrastination with this temporary to‐do list. Combined with its own engaging alarm clock and Dark Mode toggle option, become empowered to begin and complete your tasks within the same session.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "C:/Users/jessi/Desktop/todolist/node_modules/.bin/gulp build_css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicamlee/todolist.git"
+  },
+  "author": "Jessica Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicamlee/todolist/issues"
+  },
+  "homepage": "https://github.com/jessicamlee/todolist#readme"
 }

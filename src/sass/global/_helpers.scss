@@ -1,0 +1,20 @@
+@use '../utilities' as *;
+
+.theme-wrapper {
+    width: 100%;
+}
+
+.container {
+    padding: $sm*6.25 $sm*3.125;
+    max-width: $sm*48;
+    min-width: $sm*29.75;
+    position: relative;
+}
+
+.indent {
+    margin-left: $lg;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
