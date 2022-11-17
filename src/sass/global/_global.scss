@@ -24,3 +24,13 @@ body {
         }
     }
 }
+
+::-moz-selection {
+    color: $black;
+    background: $periwinkle;
+}
+  
+::selection {
+    color: $black;
+    background: $periwinkle;
+}

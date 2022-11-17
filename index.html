@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="build/css/main.css">
     </head>
     <body>
-        <div class="theme-wrapper margin-center">
+        <div class="theme-wrapper">
             <div class="container margin-center">
                 <div class="modal-container margin-center">
                     <div id="alertModal" class="modal">
@@ -40,6 +40,49 @@
                 </div>
                 <ul id="myUl"></ul>
                 <p data-aos="flip-up" data-aos-delay="2200" class="line-height subtitle">Note&colon; <b>Click</b> the task when it&apos;s completed&comma; and Select the <b>&ldquo;x&rdquo;</b> to delete them&period;</p>
+                <div class="time-container">
+                    <div class="clock-container">
+                        <div class="clock-content">
+                            <div class="clock-icons">
+                                <i class="far fa-clock" data-title="Time"></i>
+                                <i class="fas fa-clock" data-title="Count Down Timer"></i>
+                            </div>
+                            <div class="clock-numbers">
+                                <div class="number-box hour1"></div>
+                                <div class="number-box hour2"></div>
+                                <span>&colon;</span>
+                                <div class="number-box minute1"></div>
+                                <div class="number-box minute2"></div>
+                                <span>&colon;</span>
+                                <div class="number-box second1"></div>
+                                <div class="number-box second2"></div>
+                            </div>
+                            <div class="timer-input">
+                                <input type="number" placeholder="Enter Minutes">
+                            </div>
+                            <div class="time-format">
+                                <div class="type">
+                                    <span>12hr</span>
+                                </div>
+                                <div class="format">
+                                    <span>AM</span>
+                                    <span>PM</span>
+                                </div>
+                                <div class="controls">
+                                    <span class="start active">
+                                        <i class="fas fa-play">Start</i>
+                                    </span>
+                                    <span class="pause">
+                                        <i class="fas fa-pause">Pause</i>
+                                    </span>
+                                    <span class="stop active">
+                                        <i class="fas fa-stop">Stop</i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <footer>
                     <p>Built with matcha 🍵</p>
                     <p>&copy; 2022 Jessica Lee&period; All Rights Reserved&period;</p>
