@@ -6,10 +6,11 @@ footer {
     bottom: 0;
     width: 100%;
     padding: $sm $sm*2 $sm*1.5;
+    background-color: $blueblack;
 
     p {
         @include font($white, $sm*0.9, $normal, $normal);
         text-align: center;
-        margin-top: $xs;
+        margin-top: $xs;        
     }
 }
