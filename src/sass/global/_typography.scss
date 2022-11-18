@@ -1,16 +1,16 @@
 @use '../utilities' as *;
 
 h1 {
-    font-size: $lg*2;
+    @include font($white, $lg*2, $medium, $base);
 }
 
 h2 {
-    font-size: $xl;
+    @include font($white, $xl, $semibold, $base);
     margin-bottom: $sm*0.1;
 }
 
 p {
-    font-size: $sm*1.25;
+    @include font($white, $sm*1.25, $normal, $base);
 }
 
 .line-height {

@@ -1,7 +1,6 @@
 @use '../utilities' as *;
 
 .input-field {
-    display: flex;
     margin-bottom: $sm*1.2;
 
     input {
@@ -11,7 +10,6 @@
         float: left;
         border-radius: $md;
         margin-right: $sm;
-        box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
     }
 }
 
@@ -45,20 +43,18 @@ li {
     }
 
     &.checked {
-        background: $grey;
-        color: $white;
+        @include colors($grey,$white);
         text-decoration: line-through;
 
         &::before {
             content: '';
+            @include size($xs,$sm);
             position: absolute;
-            border: $white solid;
-            border-width: 0 $sm*0.125 $sm*0.125 0;
             top: $sm*0.625;
             left: $sm;
+            border: $white solid;
+            border-width: 0 $sm*0.125 $sm*0.125 0;
             transform: rotate(45deg);
-            height: $sm;
-            width: $xs;
         }
     }
 }

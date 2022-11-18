@@ -10,13 +10,11 @@
 .addBtn {
     padding: $sm;
     width: 20%;
-    background: $sunyellow;
-    color: $blueblack;
+    background-color: $sunyellow;
     @include font($blueblack,$sm,$medium,$base);
     float: left;
     cursor: pointer;
     transition: 0.3s;
     border-radius: $md;
-    box-shadow: 0 $sm*0.25 $sm*0.25 $boxshadow;
     text-align: center;
 }
