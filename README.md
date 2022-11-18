@@ -9,6 +9,7 @@ _More details and updates on the way. Stay tuned!_
 * JavaScript
 * HTML5
 * SASS
+* GulpJS
 
 ## 📚 Credits: 
 The My To-Do List project is only live with the help of the following resources:
