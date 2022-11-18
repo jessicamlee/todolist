@@ -14,3 +14,4 @@ _More details and updates on the way. Stay tuned!_
 The My To-Do List project is only live with the help of the following resources:
 * AOS Library (https://michalsnik.github.io/aos/)
 * Font Awesome Icons (https://fontawesome.com/v6/icons)
+* Google Material Symbols and Icons (https://fonts.google.com/icons)
