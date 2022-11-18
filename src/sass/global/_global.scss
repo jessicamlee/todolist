@@ -4,18 +4,16 @@
 @use 'typography';
 
 body {
-    background-color: $blueblack;
-    color: $white;
+    @include colors($blueblack,$white);
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 16px;
     overflow: none;
 
     &.light {
-        background-color: $white;
-        color: $blueblack;
+        @include colors($white,$blueblack);
     
-        .subtitle {
+        h1, h2, .subtitle {
             color: $blueblack;
         }
     
@@ -26,11 +24,9 @@ body {
 }
 
 ::-moz-selection {
-    color: $black;
-    background: $periwinkle;
+    @include colors($black,$periwinkle);
 }
   
 ::selection {
-    color: $black;
-    background: $periwinkle;
+    @include colors($periwinkle,$black);
 }

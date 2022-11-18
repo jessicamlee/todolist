@@ -2,13 +2,13 @@
 
 @media (min-width:1024px) {
     .close:hover {
-        background-color: $red;
-        color: $white;
+        @include colors($red,$white);
+        // background-color: $red;
+        // color: $white;
         border-radius: $md;
     }
     
     .addBtn:hover {
-        background-color: $navy;
-        color: $white;
+        color: $periwinkle;
     }
 }
