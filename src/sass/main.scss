@@ -1,8 +1,9 @@
-@use '../sass/aos/aos';
+@use '../sass/plugins/plugins';
 @use '../sass/global/reset';
 @use 'utilities' as *;
 
-@use '../sass/global/index';
+@use '../sass/global/global';
+@use '../sass/components/buttons';
 @use '../sass/partials/header';
 @use '../sass/todolist/todolist';
 @use '../sass/clock/clock';

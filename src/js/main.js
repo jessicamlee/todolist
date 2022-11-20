@@ -1,4 +1,23 @@
 /* -----------------------------
+------ Keyboard Access ---------
+------------------------------ */
+// function pressedEnterKey(event){
+//   var key = 0; 
+
+//   if (window.event) {
+//     key = window.event.keyCode;
+//   } else if (event) {
+//     key = event.keyCode;
+//   }
+
+//   return true;
+// }
+
+// function setUpKeyboardAction(){
+
+// }
+
+/* -----------------------------
 ------ Pomodoro Timer ----------
 ------------------------------ */
 let seconds = document.querySelector(".seconds");

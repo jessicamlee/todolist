@@ -1,0 +1,20 @@
+@use '../utilities' as *;
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $sm*0.75 $sm $sm*0.75 $sm;
+}
+
+.addBtn {
+    padding: $sm;
+    width: 20%;
+    background-color: $sunyellow;
+    @include font($blueblack,$sm,$medium,$base);
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: $md;
+    text-align: center;
+}
