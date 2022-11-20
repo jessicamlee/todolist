@@ -5,10 +5,10 @@ The first iteration focused on learning, testing, designing, and building the to
 
 _More details and updates on the way. Stay tuned!_
 
-## ✏ Tools & Languages: 
-* JavaScript
+## ✏ Languages & Tools:
 * HTML5
-* SASS
+* CSS3 / SASS
+* JavaScript
 * GulpJS
 
 ## 📚 Credits: 
