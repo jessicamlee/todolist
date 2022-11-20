@@ -21,6 +21,10 @@ body {
             color: $white;
         }
     }
+
+    &:focus {
+        outline: 3px solid $red;
+    }
 }
 
 ::-moz-selection {
