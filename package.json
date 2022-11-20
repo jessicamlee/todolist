@@ -3,12 +3,6 @@
   "description": "Beat procrastination with this temporary to‐do list. Combined with its own engaging alarm clock and Dark Mode toggle option, become empowered to begin and complete your tasks within the same session.",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "build_css": "C:/Users/jessi/Desktop/todolist_v2_5/node_modules/.bin/gulp build_css",
-    "build_js": "C:/Users/jessi/Desktop/todolist_v2_5/node_modules/.bin/gulp build_js",
-    "build": "npm run build_css && npm run build_js",
-    "watch": "C:/Users/jessi/Desktop/todolist_v2_5/node_modules/.bin/gulp watch"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jessicamlee/todolist.git"
