@@ -3,6 +3,8 @@ Beat procrastination with this temporary to‐do list. Combined with its own eng
 
 The first iteration focused on learning, testing, designing, and building the to-do list's structure, interface, and on-load presentation. Currently, the alarm clock and stopwatch feature is in the works for the My To-Do List project.
 
+**Next Phase:** Add keyboard shortcuts to make the interface accessible.
+
 _More details and updates on the way. Stay tuned!_
 
 ## ✏ Languages & Tools:
