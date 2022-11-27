@@ -3,12 +3,25 @@
 @media (min-width:1024px) {
     .close:hover {
         @include colors($red,$white);
-        // background-color: $red;
-        // color: $white;
         border-radius: $md;
     }
     
     .addBtn:hover {
         color: $periwinkle;
+    }
+
+    .time-container .controls-container {
+
+        .fa-pause:hover {
+            color: $sunyellow;
+        }
+    
+        .fa-play:hover {
+            color: $periwinkle;
+        }
+    
+        .fa-stop:hover {
+            color: $red;
+        }
     }
 }
